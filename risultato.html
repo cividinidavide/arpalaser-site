@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arpa Laser</title>
+	
+<LINK REL="ICON" HREF="images/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Onepage Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/video.css" rel="stylesheet">
+<link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'>
+	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type='text/javascript' src='js/jquery.min.js'></script>
+<script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
+<script type='text/javascript' src='js/jquery.easing.1.3.js'></script> 
+<script type='text/javascript' src="js/video.js></script>
+<script type='text/javascript' src='js/camera.min.js'></script> 
+ <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+    <link rel="stylesheet" href="css/swipebox.css">
+    <script src="js/jquery.swipebox.min.js"></script> 
+   
+   
+
+
+</head>
+<body>
+<div class="header" id="head">	
+      <div class="container"> 
+         <div class="header-top">
+		   <div class="top-menu">
+		   	<span class="menu"> </span>
+			<ul>
+			 	<nav class="cl-effect-5">
+				<li><a href="index.html"><span data-hover="Home">Home</span></a></li>
+				<li><a href="materiale.html"><span data-hover="Materiale">Materiale</span></a></li>
+				<li><a href="software.html"><span data-hover="Software"><span>Software</span></a></li>
+				<li><a class="active"><span data-hover="Risultato">Risultato</span></a></li>
+				<li><a href="contatti.html"><span data-hover="Contatti">Contatti</span></a></li>
+				</nav>
+			 </ul>
+			 </div>
+			 <!--script-nav-->
+		 <script>
+		 $("span.menu").click(function(){
+		 $(".top-menu ul").slideToggle("slow" , function(){
+		 });
+		 });
+		 </script>
+			<div class="clearfix"></div>
+		 </div>  
+		 
+			<br><br>
+		
+		<div align="center" class="index-banner">
+			<img  src="images/logo.png" alt="" style="width: 100%"/>
+		</div>
+		
+      </div>
+	 </div>     
+	</div>
+	<div class="content">
+		<div class="services-section" id="services">
+			<div class="container"> 
+			<div class="services-header">
+				<h3><span>[</span> RISULTATO <span>]</span></h3>
+					<p>
+						A lavoro terminato, ecco un video che mostra il risultato finale del mio progetto:
+						<br>
+						</p>
+			</div>
+			
+			<div align="center">
+				<video id="MY_VIDEO_1" class="video-js vjs-default-skin" controls
+				 preload="auto" width="100%" height="450" poster="MY_VIDEO_POSTER.jpg"
+				 data-setup="{}">
+				 <source src="video/video.mp4" type='video/mp4'>
+				</video>
+			</div>
+			
+			<br>
+			</div>
+		</div>
+	</div>
+		
+		<!--
+		<div class="works-section" id="material">
+		   <div class="works-header">
+				<h3 style="text-align:center"><span>[</span> MONTAGGIO <span>]</span></h3>
+					<p style="text-align:center">In questa slide sono visualizzati i passaggi per montare correttamente i materiali, accompagnati da una piccola
+						descrizione su ciò che stiamo facendo.<br>
+					<b>N.B.: l'Arduino Leonardo lo uso solamente come prova per i materiali, a lavoro completo sarà utilizzato l'Arduino Mega.</b></p>
+			</div>
+			<div class="portfolio-section-bottom-row" id="portfolio">
+			<div class="container">
+				
+				<br><br>
+			
+		
+			
+	  
+			<div class="arrow">
+				<a href="#telaio" class="scroll"><img src="images/arrow.png" alt=""/></a>
+			</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+
+	<div class="about-section" id="telaio" id="telaio">
+	<div class="container">
+		<div class="about-header">
+			<h3 style="text-align:center"><span>[</span> TELAIO <span>]</span></h3>
+			<br><br>
+			
+			<p id="telaio" style="text-align:center">
+				Ovviamente, per rendere più bello il mio progetto, ho deciso di costruire un piccolo telaio.<br>
+				Questo telaio è stato creato prendendo due barre di acciaio zincato forato, modificate con alcune viti e saldature
+				e tenuto insieme da alcune viti.<br><br>
+				
+				<b>
+					Per risparmiare spazio su di esso, ho anche deciso di eliminare la breadboard.<br>
+					Per far ciò ho saldato tutti i
+					componenti elettronici visti nella slide precedente.
+				</b>
+			</p>
+			<br><br>
+			
+			
+			
+	</div>
+	</div>
+	<br><br>
+	</div>
+	-->
+	
+	<div class="footer-section" id="contact" id="contact">
+			<div class="container" style="font-size: 19px; color: #D5D6D7; font-weight: 400; text-align: center"> 
+
+					<p> Copyright &copy; 2015  Davide Cividini  -  davide.civid.96@gmail.com  -  +39 333.1285969</p>
+
+					<script type="text/javascript">
+						$(document).ready(function() {
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+			</div>
+
+		</div>		
+	</div>
+	
+	
+</body>
+</html>

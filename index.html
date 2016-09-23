@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arpa Laser</title>
+<LINK REL="ICON" HREF="images/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	    
+	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+ <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+	 <!------ Light Box ------>
+    <link rel="stylesheet" href="css/swipebox.css">
+    <script src="js/jquery.swipebox.min.js"></script> 
+    <script type="text/javascript">
+		jQuery(function($) {
+			$(".swipebox").swipebox();
+		});
+	</script>
+    <!------ Eng Light Box ------>	
+
+</head>
+<body>
+<div class="header" id="head">	
+      <div class="container"> 
+         <div class="header-top">
+		   <div class="top-menu">
+		   	<span class="menu"> </span>
+			<ul>
+			 	<nav class="cl-effect-5">
+				<li><a class="active"><span data-hover="Home">Home</span></a></li>
+				<li><a href="materiale.html"><span data-hover="Materiale">Materiale</span></a></li>
+				<li><a href="software.html"><span data-hover="Software"><span>Software</span></a></li>
+				<li><a href="risultato.html"><span data-hover="Risultato">Risultato</span></a></li>
+				<li><a href="contatti.html"><span data-hover="Contatti">Contatti</span></a></li>
+				</nav>
+			 </ul>
+			 </div>
+
+			 <!--script-nav-->
+		 <script>
+		 $("span.menu").click(function(){
+		 $(".top-menu ul").slideToggle("slow" , function(){
+		 });
+		 });
+		 </script>
+			<div class="clearfix"></div>
+		</div>
+		
+		<br><br>
+		
+		<div align="center" class="index-banner">
+			<img  src="images/logo.png" alt="" style="width: 100%"/>
+		</div>
+		
+		
+	 </div>   
+	</div>
+	
+	
+	<!-- HOME -->
+	<div class="content">
+		<div class="services-section" id="services">
+			<div class="container"> 
+			<div class="services-header">
+				<h3><span>[</span> HOME <span>]</span></h3>
+					<p>Questo è un progetto costruito con <b>Arduino</b>: una scheda elettronica di piccole dimensioni con un microcontrollore, utile per costruire piccoli progetti di vario genere.<br>
+					Con esso è possibile realizzare in maniera relativamente rapida e semplice piccoli dispositivi. E' inoltre fornito di un semplice ambiente di sviluppo integrato per la programmazione.</p>
+					<p>Il mio progetto, controllato tramite un programma scritto in linguaggio <b>C#</b>, simula il funzionamento di un <b>ARPA</b>, in cui le corde sono sostituite da dei laser.</p><br>
+			</div>
+			<div class="services-sectiongrids">
+				<div class="col-md-4 services-grid">
+					<img src="images/img1.png" alt=""/>
+					<h4>IDEE E DESIGN</h4>
+					<p>L'idea è nata vedendo lo strumento di <b>Stephen Hobley</b>, un'Arpa Laser creata con strumenti ben più professionali.<br>
+					Perciò perchè non repricarla con Arduino?</p>
+				</div>
+				<div class="col-md-4 services-grid">
+					<img src="images/img2.png" alt=""/>
+					<h4>PROGETTAZIONE</h4>
+					<p>Scelta dei componenti elettronici per Arduino e del software per il controllo di esso.<br>
+					E' la fase più delicata, da cui dipende il lavoro finale.</p>
+				</div>
+				<div class="col-md-4 services-grid">
+					<img src="images/img3.png" alt=""/>
+					<h4>PROGRAMMAZIONE</h4>
+					<p>
+					• Utilizzo di un programma in <b>C#</b> per il controllo della porta seriale e del suono dell'arpa.<br>
+					• Utilizzo di un programma <b>.ino</b> per il controllo dei laser dall'Arduino.
+					</p>
+				</div>
+				<div class="clearfix"></div>
+		</div>
+		<div class="arrow1">
+			<a href="#work" class="scroll"><img src="images/arrow1.png" alt=""/></a>
+		</div>
+		</div>
+		</div>
+		
+		
+		
+		<!-- COME FUNZIONA -->
+		<div class="works-section" id="work" id="work">
+		   <div class="works-header">
+				<h3 style="text-align:center"><span>[</span> COME FUNZIONA <span>]</span></h3>
+					<p style="text-align:center">Questo è ciò su cui si basa il mio progetto:</p>
+					
+					<div style="text-align:center"">
+						<img align="center" src="images/arduino.png" style="width:40%" alt="" />
+					</div>
+					
+					<p style="text-align:center">
+						Ad esso è possibile collegare diverse "<b>shield</b>", ovvero delle schede di espansione che possono tornare utili a seconda del progetto che stiamo costruendo.<br>
+						Noi non avremo bisogno di collegare nessuna shield perchè il funzionamento è molto semplice: esso non dovrà far altro che leggere la frequenza di alcuni fotodiodi e controllare il valore di essi. Se il valore scende sotto una determinata soglia, esso comunica sulla porta seriale il laser che è stato interrotto, che corrisponde alla nota suonata.<br>
+						Questo controllo è effettuato da un programmino scritto col linguaggio dedicato Arduino.						
+					</p><br>
+					
+					<div style="text-align:center">
+						<img align="center" src="images/arduino_program.png" style="weight: 50%; height:100px" alt="Arduino" /><br><br>
+					</div>
+					
+					<p style="text-align:center">
+						Una volta che l'Arduino comunica sulla porta seriale la nota che è stata interrotta, bisogna generare il suono di essa.<br>
+						A tal proposito, uso un programma scritto in C# che non fa altro che mettersi in ascolta sulla porta seriale, legge la nota inviatagli dall'Arduino, e tramite il pc emette il suono della nota suonata.<br>
+						Per rendere il programma più completo, ho introdotto un menù che consente di scegliere il filtro del suono. In questo modo è possibile riprodurre più suoni, proprio come se stessimo suonando diversi strumenti (chitarra, batteria, ecc).
+					</p><br>
+					
+					<div style="text-align:center">
+						<img align="center" src="images/visualstudio.png" alt="C#" /><br><br>
+					</div>
+			</div>
+			<div class="arrow">
+				<a href="#about" class="scroll"><img src="images/arrow.png" alt=""/></a>
+			</div>
+		</div>
+
+	
+	
+	
+	
+	
+	
+	
+	<!-- portfolio-section-ends -->
+	<div class="about-section" id="about" id="about">
+	<div class="container">
+		<div class="about-header">
+			<h3 style="text-align:center"><span>[</span> STORYBOARD <span>]</span></h3>
+			<div class="about-imag">
+			<img src="images/ingranaggi.png" alt=""/>
+			</div>
+			<div class="about-text">
+					<p>
+						Man mano che procedevo col lavoro mi segnavo sempre una data e ciò che avevo completato, in modo tale da vedere ciò che avevo fatto e ciò che mi mancava da fare.<br>
+						Così facendo, sono riuscito a creare una sorta di <b>diario</b> con le date più significative e ad esse ho associato una percentuale di completamento finale. Questo è il risultato:
+					</p>
+			</div>
+			<div class="clearfix"></div>
+			</div>
+			
+			
+		<div class="about-sectiongrids">
+			<div class="col-md-6 about-leftgrid">
+				
+				<div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>21/12/2014</h4>
+							<p>
+								- Ordine materiali e inizio programma C#. <b>→ INIZIO</b>.
+							</p>
+						</div>
+						<div class="percentage">
+							<p>1%</p>
+						</div>
+					<div class="clearfix"></div>
+					</div>
+					<div class="skills">
+			            <div style="width:1%"> </div>
+					</div>
+	            </div>
+								
+				<hr class="percentuale" >
+								
+	            <div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>29/12/2014</h4>
+							<p>
+								- Materiali arrivati e programma Arduino cominciato.
+							</p>
+						</div>
+						<div class="percentage">
+							<p>7%</p>
+						</div>
+					<div class="clearfix"></div>
+					</div>
+					<div class="skills">
+			            <div style="width:7%"> </div>
+					</div>
+	            </div>
+				
+				<hr class="percentuale" >
+				
+				<div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>25/01/2015</h4>
+							<p>
+								- Programmi per Arduino e in C# terminati.
+							</p>
+						</div>
+						<div class="percentage">
+							<p>20%</p>
+						</div>
+					<div class="clearfix"></div>
+					</div>
+					<div class="skills">
+			            <div style="width:20%"> </div>
+					</div>
+	            </div>
+				
+				<hr class="percentuale" >
+				
+				<div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>19/02/2015</h4>
+							<p>
+								- Materiali montati e prova dei programmi.
+							</p>
+						</div>
+						<div class="percentage">
+							<p>45%</p>
+						</div>
+					<div class="clearfix"></div>
+					</div>
+					<div class="skills">
+			            <div style="width:45%"> </div>
+					</div>
+	            </div>
+				
+				<hr class="percentuale" >
+
+			</div>
+			
+			
+			<div class="col-md-6 about-rightgrid">
+		
+				<div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>26/02/2015</h4>
+							<p>
+								- Costruzione telaio per l'Arpa + inizio sito "guida".
+							</p>
+						</div>
+						<div class="percentage">
+							<p>56%</p>
+						</div>
+					<div class="clearfix"></div>
+					</div>
+					<div class="skills">
+			            <div style="width:56%"> </div>
+					</div>
+	            </div>
+				
+				<hr class="percentuale" >	  
+						  
+				<div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>27/04/2015</h4>
+							<p>
+								- Telaio e siti terminati.
+							</p>
+						</div>
+						<div class="percentage">
+							<p>80%</p>
+						</div>
+					<div class="clearfix"></div>
+					</div>
+					<div class="skills">
+			            <div style="width:80%"> </div>
+					</div>
+	            </div>
+				
+				<hr class="percentuale" >
+						  
+				<div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>02/05/2015</h4>
+							<p>
+								- Il sito è online.
+							</p>
+						</div>
+						<div class="percentage">
+							<p>92%</p>
+						</div>
+					<div class="clearfix"></div>
+					</div>
+					<div class="skills">
+			            <div style="width:92%"> </div>
+					</div>
+	            </div>
+				
+				<hr class="percentuale" >
+						 
+				<div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>03/06/2015</h4>
+							<p>
+								- Ricontrollo generale. <b>→ FINE</b>.
+							</p>
+						</div>
+						<div class="percentage">
+							<p>100%</p>
+						</div>
+					<div class="clearfix"></div>
+					</div>
+					<div class="skills">
+			            <div style="width:100%"> </div>
+					</div>
+	            </div>
+				
+				<hr class="percentuale" >
+		
+			<div class="clearfix"></div>
+			</div>		
+			
+			
+			
+			
+	</div>
+	
+	</div>
+
+	</div>
+	<p align="center" id="material_p">Il diario completo in formato <b>.xlsx</b> (Excel) può essere reperito <b><a href="diary/Diario_Progetto.xlsx">QUI</a></b>.</p>
+	<br><br><br>
+	
+
+	<div class="footer-section" id="contact" id="contact">
+			<div class="container" style="font-size: 19px; color: #D5D6D7; font-weight: 400; text-align: center"> 
+
+					<p> Copyright &copy; 2015  Davide Cividini  -  davide.civid.96@gmail.com  -  +39 333.1285969</p>
+
+					<script type="text/javascript">
+						$(document).ready(function() {
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+			</div>
+
+	</div>		
+	</div>
+	
+	
+</body>
+</html>
